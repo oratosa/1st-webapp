@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;" charset="utf-8"/>
+    <title>SampleMapApp</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/d3.v3.min.js"></script>
+    <script src="js/d3sparql.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAc8KY7XhlvJfBM9yFfub9Mtcyf4WnBlZ8"></script>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+    <script src="script/pref.js"></script> <!-- 経度緯度情報 -->
+    <script src="script/script.js"></script> <!-- SPARQL問合せ処理やMapの描画 -->
+  </head>
+  <body>
+    <header>
+    </header>
+    <main>
+      <div class="wrapper">
+        <select id="query" class="form-control">
+          <option>-選択してください-</option>
+          <option value="花">花</option>
+          <option value="木">木</option>
+          <option value="鳥">鳥</option>
+          <option value="知事">知事</option>
+        </select>
+        <div id="gmap"></div>
+        <div id="result"></div>
+      </div>
+    </main>
+  </body>
+</html>
